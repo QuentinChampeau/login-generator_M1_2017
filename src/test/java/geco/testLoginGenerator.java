@@ -31,4 +31,11 @@ public class testLoginGenerator {
         assertThat(PDUR2, is("PDUR2"));
     }
 
+    @Test
+    public void testGenerateLoginForJohnAndRalling() {
+        LoginGenerator logiGenerator = new LoginGenerator(loginService);
+        String JRAL2 = logiGenerator.generateLoginForNomAndPrenom("John", "Ralling");
+        assertThat(JRAL2, is("JRAL2"));
+    }
+
 }
